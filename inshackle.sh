@@ -416,8 +416,30 @@ sleep 5
 
 username_id=$(curl -L -s 'https://www.instagram.com/'$user'' > getid && grep -o  'profilePage_[0-9]*.' getid | cut -d "_" -f2 | tr -d '"')
 
-
-tadeush="12553696"
+profilePage_="411708703"
+nadyadorofeeva="9915248"
+jahkhalib="1148546917"
+sharishanya="2560470278"
+realpotap="1038140878"
+xenia_sobchak="21965519"
+sergeyburunovofficial="3050451597"
+sezhukov="19937528"
+timatiofficial="189003872"
+iliyaprusikin="145002381"
+zelenskiy_official="4731970969"
+monatik_official="46284059"
+anton_lapenko="50787298"
+arthurpirozhkov="293661174"
+lomachenkovasiliy="307887741"
+glukozamusic="18114820"
+annasedokova="179302148"
+pavelvolyaofficial="333052291"
+shnurovs="456931526"
+ververa="19343908"
+gagara1987="50918978"
+vecherniy_urgant="288464691"
+bastaakanoggano="28715726"
+aleksey_durnev="202695492"
 anatoliyanatolich="279157676"
 garikkharlamov="601451280"
 gorbacheva="30477865"
@@ -429,8 +451,8 @@ kosadcha="2423802"
 yuriy_tkach="325618172"
 yurydud="403353155"
 tina_karol="306645125"
+banksy="564287810"
 schwarzenegger="198945880"
-
 beyonce="247944034"
 kimkardashian="18428658"
 therock="232192182"
@@ -445,7 +467,7 @@ instagram="25025320"
 
 
 if [[ ! -e celeb_id ]]; then
-printf "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" $tadeush $anatoliyanatolich $garikkharlamov $gorbacheva $ptuxerman $vynnyk $kamenskux $best_video_ru $kosadcha $yuriy_tkach $yurydud $tina_karol $schwarzenegger $shawnmendes $katyperry $madonna $leonardodicaprio $ladygaga $instagram $beyonce $kimkardashian $therock $kylie $jelopez > celeb_id
+printf "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" $profilePage_ $nadyadorofeeva $jahkhalib $sharishanya $realpotap $xenia_sobchak $sergeyburunovofficial $sezhukov $timatiofficial $iliyaprusikin $zelenskiy_official $monatik_official $anton_lapenko $arthurpirozhkov $lomachenkovasiliy $glukozamusic $annasedokova $pavelvolyaofficial $shnurovs $ververa $gagara1987 $vecherniy_urgant $bastaakanoggano $aleksey_durnev $anatoliyanatolich $garikkharlamov $gorbacheva $ptuxerman $vynnyk $kamenskux $best_video_ru $kosadcha $yuriy_tkach $yurydud $tina_karol $banksy $schwarzenegger $shawnmendes $katyperry $madonna $leonardodicaprio $ladygaga $instagram $beyonce $kimkardashian $therock $kylie $jelopez > celeb_id
 fi
 
 while [[ true ]]; do
@@ -466,11 +488,11 @@ else
 printf "\e[1;92mOK\e[0m\n"
 fi
 
-sleep 3
+sleep 5
 
 done
 printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;77m Sleeping 60 secs...\e[0m\n"
-sleep 60
+sleep 90
 #unfollow
 for celeb in $(cat celeb_id); do
 data='{"_uuid":"'$guid'", "_uid":"'$username_id'", "user_id":"'$celeb'", "_csrftoken":"'$var2'"}'
